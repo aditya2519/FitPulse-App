@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/chartTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fitness Analysis"
+        android:textSize="28sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/barChartDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calories Burned by Workout Type"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp"
+        android:gravity="center" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/white"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/pieChartDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Workout Duration Distribution"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp"
+        android:gravity="center" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:padding="16dp"/>
+
+
+</LinearLayout>

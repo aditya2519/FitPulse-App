@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tvWorkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="60dp"
+        android:text="Workout"
+        android:textColor="@color/bottom_navigation_selector"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvWorkoutList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWorkout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Chronometer
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/circleProgress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:fontFamily="@font/montserrat"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/btnStart_stop"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnReset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint= "@color/pastelgreen"
+        android:elevation="4dp"
+        android:text="Start"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnFinish"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#4e4ed3"
+        android:elevation="4dp"
+        android:text="Reset"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/bottom_navigation_selector"
+        android:elevation="4dp"
+        android:text="Finish Workout"
+        android:textColor="#FFFFFF" />
+
+    <ProgressBar
+        android:id="@+id/circleProgress"
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="182dp"
+        android:progress="100"
+        android:progressDrawable="@drawable/progress_circle" />
+
+
+</RelativeLayout>
